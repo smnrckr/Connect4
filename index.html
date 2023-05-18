@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<head>
+  <title>Connect 4</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <base href="/" />
+  <link href="index.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <div>
+    <h1
+      style="text-align: center; font-family: 'Times New Roman', Times, serif"
+    >
+      CONNECT4 OYUNUNA HOŞGELDİNİZ
+    </h1>
+  </div>
+  <div id="table" class="grid">
+    <tr id="nine">
+      <div class="cell" id="eighty-one"></div>
+      <div class="cell" id="eighty"></div>
+      <div class="cell" id="seventy-nine"></div>
+      <div class="cell" id="seventy-eight"></div>
+      <div class="cell" id="seventy-seven"></div>
+      <div class="cell" id="seventy-six"></div>
+      <div class="cell" id="seventy-five"></div>
+      <div class="cell" id="seventy-four"></div>
+      <div class="cell" id="seventy-three"></div>
+    </tr>
+
+    <tr id="eight">
+      <div class="cell" id="seventy-two"></div>
+      <div class="cell" id="seventy-one"></div>
+      <div class="cell" id="seventy"></div>
+      <div class="cell" id="sixty-nine"></div>
+      <div class="cell" id="sixty-eight"></div>
+      <div class="cell" id="sixty-seven"></div>
+      <div class="cell" id="sixty-six"></div>
+      <div class="cell" id="sixty-five"></div>
+      <div class="cell" id="sixty-four"></div>
+    </tr>
+
+    <tr id="seven">
+      <div class="cell" id="sixty-three"></div>
+      <div class="cell" id="sixty-two"></div>
+      <div class="cell" id="sixty-one"></div>
+      <div class="cell" id="sixty"></div>
+      <div class="cell" id="fifty-nine"></div>
+      <div class="cell" id="fifty-eight"></div>
+      <div class="cell" id="fifty-seven"></div>
+      <div class="cell" id="fifty-six"></div>
+      <div class="cell" id="fifty-five"></div>
+    </tr>
+
+    <tr id="six">
+      <div class="cell" id="fifty-four"></div>
+      <div class="cell" id="fifty-three"></div>
+      <div class="cell" id="fifty-two"></div>
+      <div class="cell" id="fifty-one"></div>
+      <div class="cell" id="fifty"></div>
+      <div class="cell" id="forty-nine"></div>
+      <div class="cell" id="forty-eight"></div>
+      <div class="cell" id="forty-seven"></div>
+      <div class="cell" id="forty-six"></div>
+    </tr>
+
+    <tr id="five">
+      <div class="cell" id="forty-five"></div>
+      <div class="cell" id="forty-four"></div>
+      <div class="cell" id="forty-three"></div>
+      <div class="cell" id="forty-two"></div>
+      <div class="cell" id="forty-one"></div>
+      <div class="cell" id="forty"></div>
+      <div class="cell" id="thirty-nine"></div>
+      <div class="cell" id="thirty-eight"></div>
+      <div class="cell" id="thirty-seven"></div>
+    </tr>
+    <tr id="four">
+      <div class="cell" id="thirty-six"></div>
+      <div class="cell" id="thirty-five"></div>
+      <div class="cell" id="thirty-four"></div>
+      <div class="cell" id="thirty-three"></div>
+      <div class="cell" id="thirty-two"></div>
+      <div class="cell" id="thirty-one"></div>
+      <div class="cell" id="thirty"></div>
+      <div class="cell" id="tweny-nine"></div>
+      <div class="cell" id="tweny-eight"></div>
+    </tr>
+
+    <tr id="three"> 
+      <div id="twenty-seven" class="cell"></div>
+      <div id="twenty-six" class="cell"></div>
+      <div id="twenty-five" class="cell"></div>
+      <div id="twenty-four" class="cell"></div>
+      <div id="twenty-three" class="cell"></div>
+      <div id="twenty-two" class="cell"></div>
+      <div id="twenty-one" class="cell"></div>
+      <div id="twenty" class="cell"></div>
+      <div id="nineteen" class="cell"></div>
+    </tr>
+
+    <tr id="two">
+      <div id="eighteen" class="cell"></div>
+      <div id="seventeen" class="cell"></div>
+      <div id="sixteen" class="cell"></div>
+      <div id="fifteen" class="cell"></div>
+      <div id="fourteen" class="cell"></div>
+      <div id="thirteen" class="cell"></div>
+      <div id="twelve" class="cell"></div>
+      <div id="eleven" class="cell"></div>
+      <div id="ten" class="cell"></div>
+    </tr>
+
+    <tr id="one">
+      <div id="nine" class="cell"></div>
+      <div id="eight" class="cell"></div>
+      <div id="seven" class="cell"></div>
+      <div id="six" class="cell"></div>
+      <div id="five" class="cell"></div>
+      <div id="four" class="cell"></div>
+      <div id="three" class="cell"></div>
+      <div id="two" class="cell"></div>
+      <div id="one" class="cell"></div>
+    </tr>
+  </div>
+
+  <div class="cell-container">
+    <div
+      id="player1"
+      class="player"
+      style="background-color: rgb(173, 216, 230)"
+    >
+      player1
+    </div>
+
+    <div
+      id="player2"
+      class="player"
+      style="background-color: rgb(173, 216, 230); margin-left: 10%"
+    >
+      player2
+    </div>
+  </div>
+  <div
+    id="playerTurn1"
+    style="
+      font-family: 'Times New Roman', Times, serif;
+      text-align: center;
+      margin-top: 1%;
+    "
+  ></div>
+  <div
+    id="playerTurn2"
+    style="font-family: 'Times New Roman', Times, serif; text-align: center"
+  ></div>
+  <script type="module" src="index.js"></script>
+</body>

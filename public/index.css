@@ -1,0 +1,45 @@
+
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(9, 60px);
+    grid-template-rows: repeat(9, 60px);
+    width: 540px;
+    height: 540px;
+    margin:auto;
+    background-color: rgb(4, 132, 167);
+}
+
+.cell{
+    border:5px solid black;
+    background-color: white;
+    border-radius: 50%;
+    outline:  5px solid black;
+}
+
+.cell:hover{
+    background-color: rgb(4, 132, 167);
+}
+
+.player{
+    background-color: rgb(173, 216, 230);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    float:left;
+    align-content: center;    
+    font-size:15px;
+    line-height:110px;
+    text-align:center;
+    justify-content: center;
+    margin-top: 10%;
+
+}
+.cell-container {
+    width:115px;
+    height: 70px;
+    margin:auto;
+    justify-content: center;
+
+  }
+ 
